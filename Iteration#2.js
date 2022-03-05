@@ -13,3 +13,27 @@ let {title, gender, year} = game ;
 console.log(title);
 console.log(gender);
 console.log(year);
+
+/* 2.2 En base al siguiente javascript, usa destructuring para crear 3 variables 
+llamadas fruit1, fruit2 y fruit3, con los valores del array. Posteriormente
+imprimelo por consola. */
+
+const fruits = ['Banana', 'Strawberry', 'Orange'];
+
+let fruit1 = fruits[0];
+let fruit2 = fruits[1];
+let fruit3 = fruits[2];
+
+console.log(fruit1, fruit2, fruit3);
+
+/* 2.3 En base al siguiente javascript, usa destructuring para crear 2 
+variables igualandolo a la función e imprimiendolo por consola. */
+
+const animalFunction = () => {
+    return {name: 'Bengal Tiger', race: 'Tiger'}
+};
+
+let {name,race} = animalFunction();
+
+console.log(name)
+console.log(race)
